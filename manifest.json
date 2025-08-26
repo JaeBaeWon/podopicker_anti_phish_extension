@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Podopicker Anti-Phishing",
+    "version": "0.1.0",
+    "description": "Brand-guard for podopicker.store",
+    "permissions": [
+        "webNavigation",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Podopicker Anti-Phish"
+    }
+}
