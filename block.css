@@ -1,16 +1,21 @@
-:root {
-    --bg: #0b1020;
-    --card: #1c2447;
-    --text: #ffffff;
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
 
-    --primary-100: #e3a4ef;
-    --primary-300: #b473ec;
+:root {
+    --devider: #ffffff;
+    --text: #000000;
+    --warning: #facc15;
+    --error: #ef4444;
     --primary: #864af9;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: var(--bg);
+    font-family: 'Pretendard', sans-serif;
+    background: var(--warning);
     color: var(--text);
     display: flex;
     height: 100vh;
@@ -19,36 +24,35 @@ body {
 }
 
 .card {
-    background: var(--card);
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 500px;
+    background: var(--devider);
+    padding: 28px;
+    border-radius: 8px;
+    max-width: 720px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    border: 2px solid var(--primary-300);
+    border: 4px solid var(--error);
 }
 
 h1 {
-    color: var(--primary);
+    color: var(--error);
     margin-bottom: 16px;
+    font-size: 36px;
 }
 
 p {
     margin: 8px 0;
+    font-size: 20px;
 }
 
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 16px;
-    background: linear-gradient(135deg, var(--primary-100), var(--primary));
+    padding: 12px 18px;
+    background: var(--primary);
     color: #fff;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.btn:hover {
-    background: var(--primary-300);
+    font-size: 16px;
 }

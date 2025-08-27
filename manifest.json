@@ -2,7 +2,10 @@
     "manifest_version": 3,
     "name": "Podopicker Anti-Phishing",
     "version": "0.1.0",
-    "description": "Brand-guard for podopicker.store",
+    "description": "🍇포도피커 고객 대상 피싱 사이트 접속 방지 확장 프로그램🍇",
+    "icons": {
+        "32": "icons/icon32.png"
+    },
     "permissions": [
         "webNavigation",
         "tabs",
